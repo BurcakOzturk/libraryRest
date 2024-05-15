@@ -14,7 +14,7 @@ import java.util.List;
 public class BookResponse {
 
     private int id;
-    private String bookName;
+    private String name;
     private int publicationYear;
     private int stock;
     private int bookCategoryId;

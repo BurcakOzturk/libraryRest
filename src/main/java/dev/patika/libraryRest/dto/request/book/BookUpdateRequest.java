@@ -25,12 +25,12 @@ public class BookUpdateRequest {
 
     private int stock;
 
-    @NotNull
+    //@NotNull
     private int bookAuthorId;
 
-    @NotNull
+   // @NotNull
     private List<Category> categoryList;
 
-    @NotNull
+   // @NotNull
     private int bookPublisherId;
 }

@@ -1,4 +1,5 @@
 package dev.patika.libraryRest.dto.request.book;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import dev.patika.libraryRest.entities.Category;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -15,20 +16,18 @@ import java.util.List;
 public class BookSaveRequest {
 
     @NotNull
-    private String bookName;
+    @JsonProperty("book_name")
+    private String name;
 
     @NotNull
     private int publicationYear;
 
     private int stock;
 
-    @NotNull
     private int bookAuthorId;
 
-    @NotNull
     private List<Category> categoryList;
 
-    @NotNull
     private int bookPublisherId;
 
 }

@@ -23,7 +23,7 @@ public class Book {
 
     @NotNull
     @Column (name = "book_name")
-    private String bookName;
+    private String name;
 
     @NotNull
     @Column (name = "book_publication_year")
